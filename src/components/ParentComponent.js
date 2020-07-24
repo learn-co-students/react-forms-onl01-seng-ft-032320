@@ -1,19 +1,19 @@
 import React from 'react';
 import Form from './Form'
 import DisplayData from './DisplayData'
- 
+
 class ParentComponent extends React.Component {
   state = {
     firstName: "",
     lastName: "",
   }
- 
+  
   handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value
     })
   }
- 
+
   render() {
     return (
       <div>
@@ -26,5 +26,5 @@ class ParentComponent extends React.Component {
     )
   }
 }
- 
+
 export default ParentComponent;
